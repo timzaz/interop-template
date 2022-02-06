@@ -22,6 +22,5 @@ if env_dir and os.getcwd() != env_dir:
 config: typing.Dict[str, typing.Any] = dict()
 interop = Interop(
     os.getenv("IMPORT_NAME", "interop_template"),
-    os.getenv("RMQ_BROKER_URI", ""),
-    type="publish"
+    os.getenv("RMQ_BROKER_URI", "")
 )
