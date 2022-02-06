@@ -44,7 +44,7 @@ if __name__ == "__main__":
                     dirfile: str = os.path.join(dir, file)
                     if os.path.isfile(dirfile) and dirfile.endswith(".py"):
                         importlib.import_module(
-                            f"interop_template.{dir}.{file[:-3]}"
+                            f"interop_template.{dir.split('/')[-1]}.{file[:-3]}"
                         )
 
     signal.signal(signal.SIGINT, signint_handler)
