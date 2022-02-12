@@ -44,10 +44,10 @@ license = "private"
 name = "interop-template"
 readme = "README.md"
 repository = "https://github.com/"
-version = "0.1.0"
+version = "0.1.1"
 
 [tool.poetry.dependencies]
-python = "^3.10.1"
+python = ">=3.10.1,<4.0"
 interop = {git = "ssh://git@github.com/timzaz/interop.git", rev = "main"}
 
 [tool.poetry.dev-dependencies]
